@@ -1,0 +1,5 @@
+config.ini
+pdf/
+*.log
+*.pdf
+*.json

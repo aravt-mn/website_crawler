@@ -1,0 +1,65 @@
+INSERT INTO grant_sites_query (id,site_id,url,request_type,response_type,block_name,detail_path,crawl_status,page_range,detail_request_type,detail_response_type,detail_path_type,post_param) VALUES 
+(158,77,'https://www.vinnova.se/en/our-activities/funded-projects/?aoName=&current=status&funds={1}&numberofhits=&q=&status={0}&take=1000','GET','HTML','#projekt > div > table > tbody > tr:nth-child(n) > td:nth-child(1) > span','a',0,'1-1','GET','HTML',NULL,NULL)
+,(67,78,'https://strategiska.se/en/research/completed-research/{0}/project/','GET','HTML','#skip-to-content > div.wrap.wrap--mobile.p-top > article > div > table > tbody > tr','a',0,'1-1','GET','HTML',NULL,NULL)
+,(20,15,'https://projectdb.jst.go.jp/ja/search/?o1=1&s1={0}&rw=500','GET','HTML','.listitem','a',0,'1-1','GET','HTML',NULL,NULL)
+,(27,27,'http://lipi.go.id/risetunggulan/detail/keanekaragaman-hayati-lingkungan-dan-maritim/2/0','GET','HTML','div.content-list-item','a',0,'1-1','GET','HTML',NULL,NULL)
+,(28,27,'http://lipi.go.id/risetunggulan/detail/keanekaragaman-hayati-lingkungan-dan-maritim/2/5','GET','HTML','div.content-list-item','a',0,'1-1','GET','HTML',NULL,NULL)
+,(29,27,'http://lipi.go.id/risetunggulan/detail/ketahanan-pangan-pertanian-dan-peternakan/3/0','GET','HTML','div.content-list-item','a',0,'1-1','GET','HTML',NULL,NULL)
+,(30,27,'http://lipi.go.id/risetunggulan/detail/ketahanan-pangan-pertanian-dan-peternakan/3/5','GET','HTML','div.content-list-item','a',0,'1-1','GET','HTML',NULL,NULL)
+,(31,27,'http://lipi.go.id/risetunggulan/detail/kesehatan-dan-farmasi/4/0','GET','HTML','div.content-list-item','a',0,'1-1','GET','HTML',NULL,NULL)
+,(32,27,'http://lipi.go.id/risetunggulan/detail/material-maju/5/0','GET','HTML','div.content-list-item','a',0,'1-1','GET','HTML',NULL,NULL)
+,(33,27,'http://lipi.go.id/risetunggulan/detail/energi-dan-transportasi/6/0','GET','HTML','div.content-list-item','a',0,'1-1','GET','HTML',NULL,NULL)
+;
+INSERT INTO grant_sites_query (id,site_id,url,request_type,response_type,block_name,detail_path,crawl_status,page_range,detail_request_type,detail_response_type,detail_path_type,post_param) VALUES 
+(35,27,'http://lipi.go.id/risetunggulan/detail/energi-dan-transportasi/6/5','GET','HTML','div.content-list-item','a',0,'1-1','GET','HTML',NULL,NULL)
+,(36,27,'http://lipi.go.id/risetunggulan/detail/teknologi-informasi-dan-komunikasi-serta-pertahanan-dan-keamanan/7/0','GET','HTML','div.content-list-item','a',0,'1-1','GET','HTML',NULL,NULL)
+,(37,27,'http://lipi.go.id/risetunggulan/detail/teknologi-informasi-dan-komunikasi-serta-pertahanan-dan-keamanan/7/5','GET','HTML','div.content-list-item','a',0,'1-1','GET','HTML',NULL,NULL)
+,(38,27,'http://lipi.go.id/risetunggulan/detail/dinamika-sosial-kemanusiaan-dan-kebudayaan/8/0','GET','HTML','div.content-list-item','a',0,'1-1','GET','HTML',NULL,NULL)
+,(39,27,'http://lipi.go.id/risetunggulan/detail/inovasi-teknologi-dan-pendayagunaan-iptek/9/0','GET','HTML','div.content-list-item','a',0,'1-1','GET','HTML',NULL,NULL)
+,(40,27,'http://lipi.go.id/risetunggulan/detail/material-maju/5/5','GET','HTML','div.content-list-item','a',0,'1-1','GET','HTML',NULL,NULL)
+,(41,27,'http://lipi.go.id/risetunggulan/detail/kesehatan-dan-farmasi/4/5','GET','HTML','div.content-list-item','a',0,'1-1','GET','HTML',NULL,NULL)
+,(318,39,'https://royalsociety.org.nz/what-we-do/funds-and-opportunities/catalyst-fund/catalyst-leaders/recipients/{0}/','GET','HTML','table tbody tr',NULL,0,'1-1','GET','HTML',NULL,NULL)
+,(319,39,'https://royalsociety.org.nz/what-we-do/funds-and-opportunities/marsden/awarded-grants/marsden-grants-awarded-2016/','GET','HTML','table tbody tr',NULL,0,'1-1','GET','HTML',NULL,NULL)
+,(14,43,'http://www.erare.eu/all-funded-projects','GET','HTML','tr.odd','a',0,'1-1','GET','HTML',NULL,NULL)
+;
+INSERT INTO grant_sites_query (id,site_id,url,request_type,response_type,block_name,detail_path,crawl_status,page_range,detail_request_type,detail_response_type,detail_path_type,post_param) VALUES 
+(21,45,'https://www.zentrumfuercitizenscience.at/de/projekte','GET','HTML','.column','::https://www.zentrumfuercitizenscience.at/',0,'1-1','GET','HTML',NULL,NULL)
+,(154,52,'https://www.etag.ee/en{0}','GET','HTML','table  tr',NULL,0,'1-1','GET','HTML',NULL,NULL)
+,(16,73,'https://www.sav.sk/index.php?lang=en&doc=activity-proj-nat&institute_no={page}','GET','HTML','table',NULL,0,'1-400','GET','HTML',NULL,NULL)
+,(17,83,'https://gow.epsrc.ukri.org/{0}','GET','HTML','tr.GridAlternatingRow','a::https://gow.epsrc.ukri.org/',0,'1-1','GET','HTML',NULL,NULL)
+,(157,53,'http://www.aka.fi/en/strategic-research-funding/programmes-and-projects/{0}/','GET','HTML','#double > div:nth-child(2) > article > p  a','::http://www.aka.fi',0,'1-1','GET','HTML',NULL,NULL)
+,(118,84,'http://www.aero.jaxa.jp/collabo/public-invitation/{0}','JAXA','HTML','#contents > ul > li','a:nth-child(2)::http://www.aero.jaxa.jp/collabo/public-invitation/',0,'1-1','GET','HTML',NULL,NULL)
+,(119,85,'https://www.amed.go.jp/search.php?search=search&keyword=&stage%5B0%5D=%E6%8E%A1%E6%8A%9E&order_by=&pageID={page}','GET','HTML','#anc-searchResult > div > div.tblResult- tbody > tr','a::https://www.amed.go.jp',0,'1-27','GET','HTML',NULL,NULL)
+,(334,101,'http://p3.snf.ch/project-{page}','SNF','HTML',':root',NULL,0,'1-200000','GET','HTML',NULL,NULL)
+,(51,34,'http://www.vast.ac.vn/en/component/detai/?detai-search-year_begin={1}&detai-search-donvi=0&detai-search-danhmuc=0&detai-search-xeploai=0&view=search&start={0}','GET','HTML','#content > div:nth-child(5) > table > tbody > tr:nth-child(n) > td:nth-child(2)','a',0,'1-1','GET','HTML',NULL,NULL)
+;
+INSERT INTO grant_sites_query (id,site_id,url,request_type,response_type,block_name,detail_path,crawl_status,page_range,detail_request_type,detail_response_type,detail_path_type,post_param) VALUES 
+(301,49,'https://www.mon.bg/en/100286#2','GET','HTML','body > div.container.main-content > div:nth-child(1)',NULL,0,'1-1','GET','HTML',NULL,NULL)
+,(302,49,'https://www.mon.bg/en/100286#3','GET','HTML','body > div.container.main-content > div:nth-child(1)',NULL,0,'1-1','GET','HTML',NULL,NULL)
+,(304,49,'https://www.mon.bg/en/100286#5','GET','HTML','body > div.container.main-content > div:nth-child(1)',NULL,0,'1-1','GET','HTML',NULL,NULL)
+,(306,49,'https://www.mon.bg/en/100311#7','GET','HTML','body > div.container.main-content > div:nth-child(1)',NULL,0,'1-1','GET','HTML',NULL,NULL)
+,(307,49,'https://www.mon.bg/en/100311#8','GET','HTML','body > div.container.main-content > div:nth-child(1)',NULL,0,'1-1','GET','HTML',NULL,NULL)
+,(309,49,'https://www.mon.bg/en/100311#10','GET','HTML','body > div.container.main-content > div:nth-child(1)',NULL,0,'1-1','GET','HTML',NULL,NULL)
+,(310,49,'https://www.mon.bg/en/100311#11','GET','HTML','body > div.container.main-content > div:nth-child(1)',NULL,0,'1-1','GET','HTML',NULL,NULL)
+,(312,49,'https://www.mon.bg/en/100311#13','GET','HTML','body > div.container.main-content > div:nth-child(1)',NULL,0,'1-1','GET','HTML',NULL,NULL)
+,(313,49,'https://www.mon.bg/en/100311#14','GET','HTML','body > div.container.main-content > div:nth-child(1)',NULL,0,'1-1','GET','HTML',NULL,NULL)
+,(315,49,'https://www.mon.bg/en/100311#16','GET','HTML','body > div.container.main-content > div:nth-child(1)',NULL,0,'1-1','GET','HTML',NULL,NULL)
+;
+INSERT INTO grant_sites_query (id,site_id,url,request_type,response_type,block_name,detail_path,crawl_status,page_range,detail_request_type,detail_response_type,detail_path_type,post_param) VALUES 
+(15,69,'https://prosjektbanken.forskningsradet.no/prosjektbanken/rest/projectlist?Kilde=FORISS&calcType=funding&Sprak=no&offset={1}&sortBy=date&sortOrder=desc&Ar={0}','GET','JSON','projects','id::https://prosjektbanken.forskningsradet.no/#/project/NFR/',0,'1-1','GET','JSON',NULL,NULL)
+,(400,5,'https://anr.fr/en/funded-projects-and-impact/funded-projects/?q=a&tx_solr%5Bfilter%5D%5B0%5D=dateinterval%253A%252A-%252A&tx_solr%5Bfilter%5D%5B1%5D=dateinterval%253A{0}01-{1}12&tx_solr%5Bpage%5D={page}','GET','HTML','#c6480 > div > article:nth-child(2) > div > section.content-style > div > div:nth-child(n) > div.card-body > div > h2','a',0,'0-150','GET','HTML',NULL,NULL)
+,(66,78,'https://strategiska.se/en/research/ongoing-research/{0}/project/','GET','HTML','#skip-to-content > div.wrap.wrap--mobile.p-top > article > div > table > tbody > tr','a',0,'1-1','GET','HTML',NULL,NULL)
+,(139,39,'https://royalsociety.org.nz/what-we-do/funds-and-opportunities/new-zealand-ecohydraulics-trust-travel-award/recipients/','GET','HTML','table tbody tr',NULL,0,'1-1','GET','HTML',NULL,NULL)
+,(333,100,'https://gepris.dfg.de/gepris/OCTOPUS?beginOfFunding={0}&bewilligungsStatus=&context=projekt&continentId=%23&countryKey=%23%23%23&einrichtungsart=-1&fachlicheZuordnung=%23&findButton=historyCall&gefoerdertIn=&index={1}&keywords_criterion=&location=&nurProjekteMitAB=false&oldContinentId=%23&oldCountryId=%23%23%23&oldSubContinentId=%23%23&pemu=%23&person=&subContinentId=%23%23&task=doSearchExtended&teilprojekte=true&zk_transferprojekt=false','GET','HTML','div.eintrag, div.eintrag_alternate','a',0,'1-1','GET','HTML',NULL,NULL)
+,(99,46,'https://pf.fwf.ac.at/en/research-in-practice/project-finder?&&search%5Bcall%5D=&search%5Bdecision_board_ids%5D=&search%5Bend_date%5D=&search%5Bgrant_years%5D%5B%5D=2018&search%5Binstitute_name%5D=&search%5Blead_firstname%5D=&search%5Blead_lastname%5D=&search%5Bper_page%5D=10&search%5Bproject_number%5D=&search%5Bproject_title%5D=&search%5Bscience_discipline_id%5D=&search%5Bstart_date%5D=&search%5Bstatus_id%5D=&search%5Bwhat%5D=&multiselect={0}&page={page}&per_page=10','GET','HTML','.single-project','.collapse-title a::https://pf.fwf.ac.at::/details',0,'1-1600','GET','HTML',NULL,NULL)
+,(300,49,'https://www.mon.bg/en/100313#1','GET','HTML','body > div.container.main-content > div:nth-child(1)',NULL,0,'1-1','GET','HTML',NULL,NULL)
+,(303,49,'https://www.mon.bg/en/100286#4','GET','HTML','body > div.container.main-content > div:nth-child(1)',NULL,0,'1-1','GET','HTML',NULL,NULL)
+,(305,49,'https://www.mon.bg/en/100311#6','GET','HTML','body > div.container.main-content > div:nth-child(1)',NULL,0,'1-1','GET','HTML',NULL,NULL)
+,(308,49,'https://www.mon.bg/en/100311#9','GET','HTML','body > div.container.main-content > div:nth-child(1)',NULL,0,'1-1','GET','HTML',NULL,NULL)
+;
+INSERT INTO grant_sites_query (id,site_id,url,request_type,response_type,block_name,detail_path,crawl_status,page_range,detail_request_type,detail_response_type,detail_path_type,post_param) VALUES 
+(311,49,'https://www.mon.bg/en/100311#12','GET','HTML','body > div.container.main-content > div:nth-child(1)',NULL,0,'1-1','GET','HTML',NULL,NULL)
+,(314,49,'https://www.mon.bg/en/100311#15','GET','HTML','body > div.container.main-content > div:nth-child(1)',NULL,0,'1-1','GET','HTML',NULL,NULL)
+,(316,49,'https://www.mon.bg/en/100312#17','GET','HTML','body > div.container.main-content > div:nth-child(1)',NULL,0,'1-1','GET','HTML',NULL,NULL)
+,(103,68,'https://www.nwo.nl/en/research-and-results/research-projects/i/{0}/{1}{0}.html','GET','HTML','#main',NULL,0,'1-1','GET','HTML',NULL,NULL)
+;
