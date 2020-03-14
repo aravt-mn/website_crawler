@@ -2,26 +2,6 @@ INSERT INTO public.grant_sites
 (id, "name", url, name_en, url_en, active)
 VALUES(1, 'eventective', 'https://www.eventective.com/', 'eventective', 'https://www.eventective.com/', true);
 
-INSERT INTO public.grant_sites_query
-(site_id, url, request_type, response_type, block_name, detail_path, crawl_status, page_range, detail_request_type, detail_response_type, detail_path_type, post_param)
-VALUES(0, '', '', '', '', '', 0, '', '', '', '', '');
-
-INSERT INTO public.grant_sites_query_param
-(query_id, "type", param, order_number)
-VALUES(0, '', '', 0);
-
-INSERT INTO public.grant_sites_query_parse_config
-(query_id, project_id, project_id_original, title, title_en, project_url, keyword, keyword_en, "source", researcher, researcher_en, institution, country, currency, award_amount, award_amount_usd, funded_date, start_date, project_term, start_year, end_year, description, description_raw, description_en, end_date)
-VALUES(0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
-
-
-create table scrape_data as  
-select id, project_id as name, project_id_original as website, '' as email, title as address, project_url as url, keyword as capacity, source as venue_type, description, crawled_date from grant_crawled_new gcn 
-
-
-
--------------------------
-
 INSERT INTO public.grant_sites_query (id,site_id,url,request_type,response_type,block_name,detail_path,crawl_status,page_range,detail_request_type,detail_response_type,detail_path_type,post_param) VALUES 
 (1,1,'https://www.eventective.com/{0}/{1}/?p={2}','GET','HTML','#ListView > div','a',0,'1-1','GET','HTML',NULL,NULL)
 ;
