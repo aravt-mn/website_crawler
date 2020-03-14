@@ -310,25 +310,25 @@ async function insertCrawledInfo(
 
 ) {
 
-  let titleEn_tmp = titleEn;
-  if (!(await isEnglishText(titleEn))) {
-    titleEn_tmp = null;
-  }
+  // let titleEn_tmp = titleEn;
+  // if (!(await isEnglishText(titleEn))) {
+  //   titleEn_tmp = null;
+  // }
 
-  let keywordEn_tmp = keywordEn;
-  if (!(await isEnglishText(keywordEn))) {
-    keywordEn_tmp = null;
-  }
+  // let keywordEn_tmp = keywordEn;
+  // if (!(await isEnglishText(keywordEn))) {
+  //   keywordEn_tmp = null;
+  // }
 
-  let researcherEn_tmp = researcherEn;
-  if (!(await isEnglishText(researcherEn))) {
-    researcherEn_tmp = null;
-  }
+  // let researcherEn_tmp = researcherEn;
+  // if (!(await isEnglishText(researcherEn))) {
+  //   researcherEn_tmp = null;
+  // }
 
-  let descriptionEn_tmp = descriptionEn;
-  if (!(await isEnglishText(descriptionEn))) {
-    descriptionEn_tmp = null;
-  }
+  // let descriptionEn_tmp = descriptionEn;
+  // if (!(await isEnglishText(descriptionEn))) {
+  //   descriptionEn_tmp = null;
+  // }
   
   // create connection
   const connection = createConnection();
@@ -399,13 +399,13 @@ async function insertCrawledInfo(
       projectId,
       projectIdOriginal,
       title,
-      titleEn_tmp,
+      titleEn,
       projectUrl,
       keyword,
-      keywordEn_tmp,
+      keywordEn,
       source,
       researcher,
-      researcherEn_tmp,
+      researcherEn,
       institution,
       country,
       currency,
@@ -418,7 +418,7 @@ async function insertCrawledInfo(
       endYear,
       description,
       descriptionRaw,
-      descriptionEn_tmp,
+      descriptionEn,
       endDate,
       new Date(),
       html,
