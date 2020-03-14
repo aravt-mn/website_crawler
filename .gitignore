@@ -20,3 +20,4 @@ kaken_reporting-master/*.pdf
 kaken_reporting-master/*.json
 grant_crawling-master/log*.txt
 environment
+package-lock.json
