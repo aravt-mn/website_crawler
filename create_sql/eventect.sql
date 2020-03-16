@@ -15,3 +15,46 @@ INSERT INTO public.grant_sites_query_param (id,query_id,"type",param,order_numbe
 INSERT INTO public.grant_sites_query_parse_config (id,query_id,project_id,project_id_original,title,title_en,project_url,keyword,keyword_en,"source",researcher,researcher_en,institution,country,currency,award_amount,award_amount_usd,funded_date,start_date,project_term,start_year,end_year,description,description_raw,description_en,end_date) VALUES 
 (1,1,'2;#detail-page > div:nth-child(2) > div > div.row.hidden-xs > div > h1','2;#detail-page > div:nth-child(2) > div > div.row.hidden-xs > div > div:nth-child(3) > ol > li:nth-child(3) > a','2;#detail-page > div:nth-child(2) > div > div.row.hidden-xs > div > div.h4.eve-address-nav.eve-hover-pointer',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2;#detail-page > div:nth-child(2) > div > div:nth-child(4) > div > div',NULL,NULL,NULL)
 ;
+
+
+
+
+-------------------------------------------
+create table main_data as 
+(
+select 
+	id, 
+	project_id as name, 
+	project_id_original as website, 
+	title as address, 
+	project_url as url, 
+	keyword as capacity, 
+	source as venue_type, 
+	description, 
+	description_raw as desc1,
+	institution as desc2,
+	description_en as price_range,
+	researcher as phone,
+	researcher_en  as email,
+	award_amount as check_email_mark,
+	crawled_date
+from grant_crawled_new_important1 g1
+union all
+select 
+	id, 
+	project_id as name, 
+	project_id_original as website, 
+	title as address, 
+	project_url as url, 
+	keyword as capacity, 
+	source as venue_type, 
+	description, 
+	description_raw as desc1,
+	institution as desc2,
+	description_en as price_range,
+	researcher as phone,
+	researcher_en  as email,
+	award_amount as check_email_mark,
+	crawled_date
+from grant_crawled_new_missing g2
+)
